@@ -13,23 +13,32 @@ import Model.CalcCientifica;
  */
 public class CtrlCalcCientifica {
     
-    public Double RealizarCalculo(CalcCientifica CalcCientifica){
+    public String RealizarCalculo(CalcCientifica CalcCientifica){
         
         switch (CalcCientifica.getOperador()){
-            case ('+'):
-                CalcCientifica.setRes(CalcCientifica.getValor1() + CalcCientifica.getValor2());
+            case ("+"):
+                CalcCientifica.setRes(String.valueOf(CalcCientifica.getValor1() + CalcCientifica.getValor2()));
                 break;
-            case ('-'):
-                CalcCientifica.setRes(CalcCientifica.getValor1() - CalcCientifica.getValor2());
+            case ("-"):
+                CalcCientifica.setRes(String.valueOf(CalcCientifica.getValor1() - CalcCientifica.getValor2()));
                 break;
-            case ('*'):
-                CalcCientifica.setRes(CalcCientifica.getValor1() * CalcCientifica.getValor2());
+            case ("*"):
+                CalcCientifica.setRes(String.valueOf(CalcCientifica.getValor1() * CalcCientifica.getValor2()));
                 break;
-            case ('/'):
-                CalcCientifica.setRes(CalcCientifica.getValor1() / CalcCientifica.getValor2());
+            case ("/"):
+                CalcCientifica.setRes(String.valueOf(CalcCientifica.getValor1() / CalcCientifica.getValor2()));
+                break;
+            case ("cos"):
+                CalcCientifica.setRes("O ângulo de " + CalcCientifica.getValor1() + " tem o Cosseno de " + (Math.cos(Math.toRadians(CalcCientifica.getValor1()))));
+                break;
+            case ("seno"):
+                CalcCientifica.setRes("O ângulo de " + CalcCientifica.getValor1() + " tem o Seno de " + (Math.sin(Math.toRadians(CalcCientifica.getValor1()))));
+                break;
+            case ("tang"):
+                CalcCientifica.setRes("O ângulo de " + CalcCientifica.getValor1() + " tem a Tangente de " + (Math.tan(Math.toRadians(CalcCientifica.getValor1()))));
                 break;
                 
-            default: CalcCientifica.setRes(0);
+            default: CalcCientifica.setRes("");
         }
         return CalcCientifica.getRes();
     }

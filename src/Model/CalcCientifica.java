@@ -10,13 +10,13 @@ package Model;
  * @author Neto Barboza
  */
 public class CalcCientifica {
-    private Character Operador; 
+    private String Operador; 
     private double Valor1;
     private double Valor2;
-    private double Res;
+    private String Res;
             
     public CalcCientifica(){
-        
+        Operador = "";
     }
     
     //getters e setters
@@ -37,19 +37,19 @@ public class CalcCientifica {
         this.Valor2 = Valor2;
     }
 
-    public double getRes() {
+    public String getRes() {
         return Res;
     }
 
-    public void setRes(double Res) {
+    public void setRes(String Res) {
         this.Res = Res;
     }
 
-    public Character getOperador() {
+    public String getOperador() {
         return Operador;
     }
 
-    public void setOperador(Character Operador) {
+    public void setOperador(String Operador) {
         this.Operador = Operador;
     }
     
