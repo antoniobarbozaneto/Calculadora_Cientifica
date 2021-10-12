@@ -43,7 +43,24 @@ public class CtrlCalcCientifica {
             case ("exponencial"):
                 CalcCientifica.setRes("Ëxponencial de " + CalcCientifica.getValor1() + " é: " + String.valueOf(Math.exp(CalcCientifica.getValor1())));
                 break;
-
+            case ("pi"):
+                CalcCientifica.setPI(Math.PI);
+                break;
+            case ("euler"):
+                CalcCientifica.setEuler(Math.E);
+                break;
+            case ("MC"):
+                CalcCientifica.setMemoria(0.0);
+                break;
+            case ("MR"):
+                //
+                break;
+            case ("M-"):
+                CalcCientifica.setMemoria(CalcCientifica.getMemoria() - CalcCientifica.getValor1());
+                break;
+            case ("M+"):
+                CalcCientifica.setMemoria(CalcCientifica.getMemoria() + CalcCientifica.getValor1());
+                break;
             default:
                 CalcCientifica.setRes("");
         }

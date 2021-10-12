@@ -3,9 +3,6 @@
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
-    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-      <Color blue="33" green="0" red="ff" type="rgb"/>
-    </Property>
     <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
@@ -28,98 +25,113 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="btn_Num4" min="-2" pref="50" max="-2" attributes="0"/>
-                                  <Component id="btn_Num1" min="-2" pref="50" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="btn_Num2" min="-2" pref="50" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn_Num3" min="-2" pref="50" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn_Div" min="-2" pref="50" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="btn_Num5" min="-2" pref="50" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn_Num6" min="-2" pref="50" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn_Mult" min="-2" pref="50" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="btn_Euler" min="-2" pref="60" max="-2" attributes="0"/>
-                                  <Component id="btn_Pi" min="-2" pref="60" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
                           <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="btn_Num7" min="-2" pref="50" max="-2" attributes="0"/>
-                                  <Component id="btn_Limpa" min="-2" pref="50" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="btn_Num8" min="-2" pref="50" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn_Num9" min="-2" pref="50" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn_Sub" min="-2" pref="50" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="btn_Num0" min="-2" pref="50" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn_Ponto" min="-2" pref="50" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn_Sum" min="-2" pref="50" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="btn_Exp" min="-2" pref="60" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn_Res" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="btn_Log" min="-2" pref="60" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="btn_Num4" max="32767" attributes="0"/>
+                                          <Component id="btn_Num1" min="-2" pref="50" max="-2" attributes="0"/>
+                                      </Group>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="btn_Tangente" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
-                                          <Component id="btn_Seno" min="-2" pref="85" max="-2" attributes="0"/>
-                                          <Component id="btn_Cos" min="-2" pref="85" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="btn_Num2" min="-2" pref="50" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="btn_Num3" min="-2" pref="50" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="btn_Div" min="-2" pref="50" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="btn_Num5" min="-2" pref="50" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="btn_Num6" min="-2" pref="50" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="btn_Mult" min="-2" pref="50" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="btn_Num7" min="-2" pref="50" max="-2" attributes="0"/>
+                                          <Component id="btn_Limpa" min="-2" pref="50" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="btn_Num8" min="-2" pref="50" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="btn_Num9" min="-2" pref="50" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="btn_Sub" min="-2" pref="50" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="btn_Num0" min="-2" pref="50" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="btn_Ponto" min="-2" pref="50" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="btn_Sum" min="-2" pref="50" max="-2" attributes="0"/>
+                                          </Group>
                                       </Group>
                                   </Group>
                               </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="btn_Exp" min="-2" pref="60" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="btn_Res" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="btn_Log" min="-2" pref="60" max="-2" attributes="0"/>
+                                              <Component id="btn_Pi" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="btn_Tangente" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                              <Component id="btn_Seno" min="-2" pref="85" max="-2" attributes="0"/>
+                                              <Component id="btn_Cos" min="-2" pref="85" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Component id="btn_Euler" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="btn_MC" min="-2" pref="55" max="-2" attributes="0"/>
+                                  <Component id="btn_MR" alignment="1" min="-2" pref="55" max="-2" attributes="0"/>
+                                  <Component id="btn_Mmais" min="-2" pref="55" max="-2" attributes="0"/>
+                                  <Component id="btn_Menos" min="-2" pref="55" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="jTextField_Valor1" min="-2" pref="284" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextField_Valor1" min="-2" pref="284" max="-2" attributes="0"/>
+                              </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="lbl_Op" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="135" max="-2" attributes="0"/>
-                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTextField_DpMemory" min="-2" pref="284" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="48" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
               <Component id="jLabel1" min="-2" pref="22" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -127,14 +139,13 @@
                   <Component id="lbl_Op" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="btn_Num2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="btn_Num3" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="btn_Num1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="btn_Div" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn_Pi" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -157,6 +168,9 @@
                                   <Component id="btn_Ponto" alignment="3" max="32767" attributes="0"/>
                                   <Component id="btn_Limpa" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="btn_Sum" alignment="3" max="32767" attributes="0"/>
+                                  <Component id="btn_Exp" alignment="3" max="32767" attributes="0"/>
+                                  <Component id="btn_Res" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btn_Menos" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -165,26 +179,29 @@
                           </Group>
                       </Group>
                   </Group>
-                  <Group type="102" attributes="0">
-                      <Component id="btn_Seno" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="btn_Seno" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn_Pi" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn_MC" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="btn_Euler" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                          <Component id="btn_Euler" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="btn_Cos" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn_MR" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="btn_Log" alignment="3" max="32767" attributes="0"/>
                           <Component id="btn_Tangente" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="btn_Exp" alignment="3" pref="23" max="32767" attributes="0"/>
-                          <Component id="btn_Res" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                          <Component id="btn_Mmais" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jTextField_DpMemory" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -205,6 +222,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btn_Res">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="11" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="="/>
         <Property name="toolTipText" type="java.lang.String" value=""/>
         <Property name="name" type="java.lang.String" value="btn_res" noResource="true"/>
@@ -215,6 +235,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btn_Sum">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="11" style="1"/>
+        </Property>
         <Property name="label" type="java.lang.String" value="+"/>
         <Property name="name" type="java.lang.String" value="btn_mult" noResource="true"/>
       </Properties>
@@ -224,6 +247,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btn_Sub">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="11" style="1"/>
+        </Property>
         <Property name="label" type="java.lang.String" value="-"/>
         <Property name="name" type="java.lang.String" value="btn_mult" noResource="true"/>
       </Properties>
@@ -233,6 +259,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btn_Mult">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="11" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="*"/>
         <Property name="name" type="java.lang.String" value="btn_Mult" noResource="true"/>
       </Properties>
@@ -242,6 +271,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btn_Div">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="11" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="/"/>
         <Property name="name" type="java.lang.String" value="btn_mult" noResource="true"/>
       </Properties>
@@ -251,6 +283,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btn_Seno">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="11" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="seno"/>
         <Property name="name" type="java.lang.String" value="btn_mult" noResource="true"/>
       </Properties>
@@ -260,6 +295,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btn_Cos">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="11" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="cosseno"/>
         <Property name="toolTipText" type="java.lang.String" value=""/>
         <Property name="name" type="java.lang.String" value="btn_mult" noResource="true"/>
@@ -270,6 +308,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btn_Tangente">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="11" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="tangente"/>
         <Property name="name" type="java.lang.String" value="btn_mult" noResource="true"/>
       </Properties>
@@ -279,6 +320,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btn_Num2">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="11" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="2"/>
         <Property name="name" type="java.lang.String" value="btn_mult" noResource="true"/>
       </Properties>
@@ -288,6 +332,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btn_Num3">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="11" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="3"/>
         <Property name="name" type="java.lang.String" value="btn_mult" noResource="true"/>
       </Properties>
@@ -297,6 +344,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btn_Num5">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="11" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="5"/>
         <Property name="name" type="java.lang.String" value="btn_mult" noResource="true"/>
       </Properties>
@@ -306,6 +356,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btn_Num4">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="11" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="4"/>
         <Property name="name" type="java.lang.String" value="btn_mult" noResource="true"/>
       </Properties>
@@ -315,6 +368,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btn_Num6">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="11" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="6"/>
         <Property name="name" type="java.lang.String" value="btn_mult" noResource="true"/>
       </Properties>
@@ -324,6 +380,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btn_Num7">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="11" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="7"/>
         <Property name="name" type="java.lang.String" value="btn_mult" noResource="true"/>
       </Properties>
@@ -333,6 +392,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btn_Num8">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="11" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="8"/>
         <Property name="name" type="java.lang.String" value="btn_mult" noResource="true"/>
       </Properties>
@@ -342,6 +404,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btn_Num9">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="11" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="9"/>
         <Property name="name" type="java.lang.String" value="btn_mult" noResource="true"/>
       </Properties>
@@ -351,6 +416,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btn_Num0">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="11" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="0"/>
         <Property name="name" type="java.lang.String" value="btn_mult" noResource="true"/>
       </Properties>
@@ -360,6 +428,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btn_Num1">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="11" style="1"/>
+        </Property>
         <Property name="label" type="java.lang.String" value="1"/>
         <Property name="name" type="java.lang.String" value="btn_mult" noResource="true"/>
       </Properties>
@@ -369,6 +440,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btn_Ponto">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="11" style="1"/>
+        </Property>
         <Property name="toolTipText" type="java.lang.String" value=""/>
         <Property name="label" type="java.lang.String" value="."/>
         <Property name="name" type="java.lang.String" value="btn_res" noResource="true"/>
@@ -379,6 +453,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btn_Pi">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="11" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Pi"/>
         <Property name="name" type="java.lang.String" value="btn_mult" noResource="true"/>
       </Properties>
@@ -401,6 +478,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btn_Log">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="11" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="log"/>
         <Property name="name" type="java.lang.String" value="btn_mult" noResource="true"/>
       </Properties>
@@ -410,6 +490,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btn_Exp">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="11" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="exp"/>
         <Property name="name" type="java.lang.String" value="btn_mult" noResource="true"/>
       </Properties>
@@ -420,7 +503,7 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="14" style="1"/>
+          <Font name="Segoe UI" size="18" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Calculadora Cientifica"/>
       </Properties>
@@ -434,6 +517,66 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Operador: "/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn_MC">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="11" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="MC"/>
+        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[72, 22]"/>
+        </Property>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[72, 22]"/>
+        </Property>
+        <Property name="name" type="java.lang.String" value="btn_MC" noResource="true"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btn_MCMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn_MR">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="11" style="1"/>
+        </Property>
+        <Property name="label" type="java.lang.String" value="MR"/>
+        <Property name="name" type="java.lang.String" value="btn_mr" noResource="true"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btn_MRMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextField_DpMemory">
+      <Properties>
+        <Property name="text" type="java.lang.String" value=" Memory ="/>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn_Mmais">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="11" style="1"/>
+        </Property>
+        <Property name="label" type="java.lang.String" value="M+"/>
+        <Property name="name" type="java.lang.String" value="btn_mr" noResource="true"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btn_MmaisMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn_Menos">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="11" style="1"/>
+        </Property>
+        <Property name="label" type="java.lang.String" value="M-"/>
+        <Property name="name" type="java.lang.String" value="btn_mr" noResource="true"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btn_MenosMouseClicked"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

@@ -10,17 +10,21 @@ package Model;
  * @author Neto Barboza
  */
 public class CalcCientifica {
-    private String Operador; 
+
+    private String Operador;
     private double Valor1;
     private double Valor2;
+    private double Memoria;
+    private double PI;
+    private double Euler;
     private String Res;
-            
-    public CalcCientifica(){
-        Operador = "";
-    }
-    
-    //getters e setters
 
+    public CalcCientifica() {
+        Operador = "";
+        Memoria = 0;
+    }
+
+    //getters e setters
     public double getValor1() {
         return Valor1;
     }
@@ -52,6 +56,29 @@ public class CalcCientifica {
     public void setOperador(String Operador) {
         this.Operador = Operador;
     }
+
+    public double getMemoria() {
+        return Memoria;
+    }
+
+    public void setMemoria(double Memoria) {
+        this.Memoria = Memoria;
+    }
     
-    
+    public double getPI() {
+        return PI;
+    }
+
+    public void setPI(double PI) {
+        this.PI = PI;
+    }
+
+    public double getEuler() {
+        return Euler;
+    }
+
+    public void setEuler(double Euler) {
+        this.Euler = Euler;
+    }
+
 }

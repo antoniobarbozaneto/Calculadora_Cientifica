@@ -16,6 +16,7 @@ public class formCalcCientifica extends javax.swing.JFrame {
         initComponents();
         CalcCientifica = new CalcCientifica();
         CtrlCalcCientifica = new CtrlCalcCientifica();
+        jTextField_DpMemory.setText(" Memory = " + String.valueOf(CalcCientifica.getMemoria()));
     }
 
     @SuppressWarnings("unchecked")
@@ -49,9 +50,13 @@ public class formCalcCientifica extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jTextField_Valor1 = new javax.swing.JTextField();
         lbl_Op = new javax.swing.JLabel();
+        btn_MC = new javax.swing.JButton();
+        btn_MR = new javax.swing.JButton();
+        jTextField_DpMemory = new javax.swing.JTextField();
+        btn_Mmais = new javax.swing.JButton();
+        btn_Menos = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(255, 0, 51));
         setResizable(false);
 
         btn_Limpa.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
@@ -64,6 +69,7 @@ public class formCalcCientifica extends javax.swing.JFrame {
             }
         });
 
+        btn_Res.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         btn_Res.setText("=");
         btn_Res.setToolTipText("");
         btn_Res.setName("btn_res"); // NOI18N
@@ -73,6 +79,7 @@ public class formCalcCientifica extends javax.swing.JFrame {
             }
         });
 
+        btn_Sum.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         btn_Sum.setLabel("+");
         btn_Sum.setName("btn_mult"); // NOI18N
         btn_Sum.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -81,6 +88,7 @@ public class formCalcCientifica extends javax.swing.JFrame {
             }
         });
 
+        btn_Sub.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         btn_Sub.setLabel("-");
         btn_Sub.setName("btn_mult"); // NOI18N
         btn_Sub.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -89,6 +97,7 @@ public class formCalcCientifica extends javax.swing.JFrame {
             }
         });
 
+        btn_Mult.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         btn_Mult.setText("*");
         btn_Mult.setName("btn_Mult"); // NOI18N
         btn_Mult.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -97,6 +106,7 @@ public class formCalcCientifica extends javax.swing.JFrame {
             }
         });
 
+        btn_Div.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         btn_Div.setText("/");
         btn_Div.setName("btn_mult"); // NOI18N
         btn_Div.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -105,6 +115,7 @@ public class formCalcCientifica extends javax.swing.JFrame {
             }
         });
 
+        btn_Seno.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         btn_Seno.setText("seno");
         btn_Seno.setName("btn_mult"); // NOI18N
         btn_Seno.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -113,6 +124,7 @@ public class formCalcCientifica extends javax.swing.JFrame {
             }
         });
 
+        btn_Cos.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         btn_Cos.setText("cosseno");
         btn_Cos.setToolTipText("");
         btn_Cos.setName("btn_mult"); // NOI18N
@@ -122,6 +134,7 @@ public class formCalcCientifica extends javax.swing.JFrame {
             }
         });
 
+        btn_Tangente.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         btn_Tangente.setText("tangente");
         btn_Tangente.setName("btn_mult"); // NOI18N
         btn_Tangente.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -130,6 +143,7 @@ public class formCalcCientifica extends javax.swing.JFrame {
             }
         });
 
+        btn_Num2.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         btn_Num2.setText("2");
         btn_Num2.setName("btn_mult"); // NOI18N
         btn_Num2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -138,6 +152,7 @@ public class formCalcCientifica extends javax.swing.JFrame {
             }
         });
 
+        btn_Num3.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         btn_Num3.setText("3");
         btn_Num3.setName("btn_mult"); // NOI18N
         btn_Num3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -146,6 +161,7 @@ public class formCalcCientifica extends javax.swing.JFrame {
             }
         });
 
+        btn_Num5.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         btn_Num5.setText("5");
         btn_Num5.setName("btn_mult"); // NOI18N
         btn_Num5.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -154,6 +170,7 @@ public class formCalcCientifica extends javax.swing.JFrame {
             }
         });
 
+        btn_Num4.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         btn_Num4.setText("4");
         btn_Num4.setName("btn_mult"); // NOI18N
         btn_Num4.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -162,6 +179,7 @@ public class formCalcCientifica extends javax.swing.JFrame {
             }
         });
 
+        btn_Num6.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         btn_Num6.setText("6");
         btn_Num6.setName("btn_mult"); // NOI18N
         btn_Num6.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -170,6 +188,7 @@ public class formCalcCientifica extends javax.swing.JFrame {
             }
         });
 
+        btn_Num7.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         btn_Num7.setText("7");
         btn_Num7.setName("btn_mult"); // NOI18N
         btn_Num7.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -178,6 +197,7 @@ public class formCalcCientifica extends javax.swing.JFrame {
             }
         });
 
+        btn_Num8.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         btn_Num8.setText("8");
         btn_Num8.setName("btn_mult"); // NOI18N
         btn_Num8.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -186,6 +206,7 @@ public class formCalcCientifica extends javax.swing.JFrame {
             }
         });
 
+        btn_Num9.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         btn_Num9.setText("9");
         btn_Num9.setName("btn_mult"); // NOI18N
         btn_Num9.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -194,6 +215,7 @@ public class formCalcCientifica extends javax.swing.JFrame {
             }
         });
 
+        btn_Num0.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         btn_Num0.setText("0");
         btn_Num0.setName("btn_mult"); // NOI18N
         btn_Num0.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -202,6 +224,7 @@ public class formCalcCientifica extends javax.swing.JFrame {
             }
         });
 
+        btn_Num1.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         btn_Num1.setLabel("1");
         btn_Num1.setName("btn_mult"); // NOI18N
         btn_Num1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -210,6 +233,7 @@ public class formCalcCientifica extends javax.swing.JFrame {
             }
         });
 
+        btn_Ponto.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         btn_Ponto.setToolTipText("");
         btn_Ponto.setLabel(".");
         btn_Ponto.setName("btn_res"); // NOI18N
@@ -219,6 +243,7 @@ public class formCalcCientifica extends javax.swing.JFrame {
             }
         });
 
+        btn_Pi.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         btn_Pi.setText("Pi");
         btn_Pi.setName("btn_mult"); // NOI18N
         btn_Pi.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -237,6 +262,7 @@ public class formCalcCientifica extends javax.swing.JFrame {
             }
         });
 
+        btn_Log.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         btn_Log.setText("log");
         btn_Log.setName("btn_mult"); // NOI18N
         btn_Log.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -245,6 +271,7 @@ public class formCalcCientifica extends javax.swing.JFrame {
             }
         });
 
+        btn_Exp.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         btn_Exp.setText("exp");
         btn_Exp.setName("btn_mult"); // NOI18N
         btn_Exp.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -253,100 +280,150 @@ public class formCalcCientifica extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setText("Calculadora Cientifica");
 
         lbl_Op.setText("Operador: ");
+
+        btn_MC.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        btn_MC.setText("MC");
+        btn_MC.setMaximumSize(new java.awt.Dimension(72, 22));
+        btn_MC.setMinimumSize(new java.awt.Dimension(72, 22));
+        btn_MC.setName("btn_MC"); // NOI18N
+        btn_MC.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_MCMouseClicked(evt);
+            }
+        });
+
+        btn_MR.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        btn_MR.setLabel("MR");
+        btn_MR.setName("btn_mr"); // NOI18N
+        btn_MR.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_MRMouseClicked(evt);
+            }
+        });
+
+        jTextField_DpMemory.setText(" Memory =");
+        jTextField_DpMemory.setEnabled(false);
+
+        btn_Mmais.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        btn_Mmais.setLabel("M+");
+        btn_Mmais.setName("btn_mr"); // NOI18N
+        btn_Mmais.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_MmaisMouseClicked(evt);
+            }
+        });
+
+        btn_Menos.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        btn_Menos.setLabel("M-");
+        btn_Menos.setName("btn_mr"); // NOI18N
+        btn_Menos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_MenosMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(btn_Num4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(btn_Num1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(btn_Num2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btn_Num3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btn_Div, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(btn_Num5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btn_Num6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btn_Mult, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(6, 6, 6)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btn_Euler, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(btn_Pi, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(btn_Num7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(btn_Limpa, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(btn_Num8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btn_Num9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btn_Sub, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(btn_Num0, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btn_Ponto, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btn_Sum, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(btn_Exp, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btn_Res, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(btn_Log, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(btn_Num4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(btn_Num1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(btn_Tangente, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(btn_Seno, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(btn_Cos, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jTextField_Valor1, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(btn_Num2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(btn_Num3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(btn_Div, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(btn_Num5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(btn_Num6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(btn_Mult, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(btn_Num7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(btn_Limpa, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(btn_Num8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(btn_Num9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(btn_Sub, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(btn_Num0, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(btn_Ponto, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(btn_Sum, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lbl_Op))))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(btn_Exp, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(btn_Res, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(btn_Log, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(btn_Pi, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(btn_Tangente, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(btn_Seno, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(btn_Cos, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(btn_Euler, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(btn_MC, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btn_MR, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btn_Mmais, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btn_Menos, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel1)
+                                    .addComponent(jTextField_Valor1, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lbl_Op)))
+                        .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(135, 135, 135)
-                        .addComponent(jLabel1)))
-                .addContainerGap(48, Short.MAX_VALUE))
+                        .addComponent(jTextField_DpMemory, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(11, 11, 11)
+                .addGap(20, 20, 20)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField_Valor1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lbl_Op))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btn_Num2)
                             .addComponent(btn_Num3)
                             .addComponent(btn_Num1)
-                            .addComponent(btn_Div)
-                            .addComponent(btn_Pi))
+                            .addComponent(btn_Div))
                         .addGap(4, 4, 4)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -365,25 +442,31 @@ public class formCalcCientifica extends javax.swing.JFrame {
                                     .addComponent(btn_Num0, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(btn_Ponto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(btn_Limpa)
-                                    .addComponent(btn_Sum, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                    .addComponent(btn_Sum, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(btn_Exp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(btn_Res)
+                                    .addComponent(btn_Menos)))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(btn_Mult)
                                 .addGap(0, 0, Short.MAX_VALUE))))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(btn_Seno)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btn_Seno)
+                            .addComponent(btn_Pi)
+                            .addComponent(btn_MC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(4, 4, 4)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btn_Euler, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn_Cos))
+                            .addComponent(btn_Euler)
+                            .addComponent(btn_Cos)
+                            .addComponent(btn_MR))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btn_Log, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btn_Tangente))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btn_Exp, javax.swing.GroupLayout.DEFAULT_SIZE, 23, Short.MAX_VALUE)
-                            .addComponent(btn_Res, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(39, 39, 39))
+                            .addComponent(btn_Tangente)
+                            .addComponent(btn_Mmais))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jTextField_DpMemory, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         jLabel1.getAccessibleContext().setAccessibleName("Calculadora Científica");
@@ -439,11 +522,6 @@ public class formCalcCientifica extends javax.swing.JFrame {
                 if (CalcCientifica.getOperador() == "seno" || CalcCientifica.getOperador() == "cos" || CalcCientifica.getOperador() == "tang") { //operadores trigonométricos
                     lbl_Op.setText("Operador: " + CalcCientifica.getOperador());
                     JOptionPane.showMessageDialog(null, CtrlCalcCientifica.RealizarCalculo(CalcCientifica));
-                } else {
-                    if (CalcCientifica.getOperador() == "log" || CalcCientifica.getOperador() == "exp") {
-                        lbl_Op.setText("Operador: " + CalcCientifica.getOperador());
-                        JOptionPane.showMessageDialog(null, CtrlCalcCientifica.RealizarCalculo(CalcCientifica));
-                    }
                 }
             }
         } else {
@@ -547,44 +625,90 @@ public class formCalcCientifica extends javax.swing.JFrame {
     private void btn_PontoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_PontoMouseClicked
         // TODO add your handling code here:
         String Valor = jTextField_Valor1.getText();
-        jTextField_Valor1.setText(Valor + ".");
+        if (!Valor.contains(".")) {
+            jTextField_Valor1.setText(Valor + ".");
+        }
     }//GEN-LAST:event_btn_PontoMouseClicked
 
     private void btn_PiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_PiMouseClicked
         // TODO add your handling code here:
         String Valor = jTextField_Valor1.getText();
-        String PI = String.valueOf(Math.PI);
-        if (jTextField_Valor1.getText().equals(PI)) {
+        CalcCientifica.setOperador("pi");
+        CtrlCalcCientifica.RealizarCalculo(CalcCientifica);
+        if (jTextField_Valor1.getText().equals(String.valueOf(CalcCientifica.getPI()))) {
             System.out.println("Valor de PI já foi inserido");
         } else {
-            jTextField_Valor1.setText(Valor + PI);
+            jTextField_Valor1.setText(Valor + CalcCientifica.getPI());
         }
     }//GEN-LAST:event_btn_PiMouseClicked
 
     private void btn_EulerMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_EulerMouseClicked
         // TODO add your handling code here:
         String Valor = jTextField_Valor1.getText();
-        String Euler = String.valueOf(Math.E);
-        if (jTextField_Valor1.getText().equals(Euler)) {
+        CalcCientifica.setOperador("euler");
+        CtrlCalcCientifica.RealizarCalculo(CalcCientifica);
+        if (jTextField_Valor1.getText().equals(String.valueOf(CalcCientifica.getEuler()))) {
             System.out.println("Valor de Euler já foi inserido");
         } else {
-            jTextField_Valor1.setText(Valor + Euler);
+            jTextField_Valor1.setText(Valor + CalcCientifica.getEuler());
         }
     }//GEN-LAST:event_btn_EulerMouseClicked
 
     private void btn_LogMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_LogMouseClicked
         // TODO add your handling code here:
-        CalcCientifica.setOperador("log");
+        CalcCientifica.setOperador("logaritmo");
         CalcCientifica.setValor1(Double.parseDouble(jTextField_Valor1.getText()));
-        //jTextField_Valor1.setText("");
+        JOptionPane.showMessageDialog(null, CtrlCalcCientifica.RealizarCalculo(CalcCientifica));
+        jTextField_Valor1.setText("");
     }//GEN-LAST:event_btn_LogMouseClicked
 
     private void btn_ExpMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_ExpMouseClicked
         // TODO add your handling code here:
-        CalcCientifica.setOperador("exp");
+        CalcCientifica.setOperador("exponencial");
         CalcCientifica.setValor1(Double.parseDouble(jTextField_Valor1.getText()));
-        //jTextField_Valor1.setText("");
+        JOptionPane.showMessageDialog(null, CtrlCalcCientifica.RealizarCalculo(CalcCientifica));
+        jTextField_Valor1.setText("");
     }//GEN-LAST:event_btn_ExpMouseClicked
+
+    private void btn_MCMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_MCMouseClicked
+        // TODO add your handling code here:
+        CalcCientifica.setOperador("MC");
+        CtrlCalcCientifica.RealizarCalculo(CalcCientifica);
+        jTextField_DpMemory.setText(" Memory = " + String.valueOf(CalcCientifica.getMemoria()));
+        jTextField_Valor1.setText("");
+
+    }//GEN-LAST:event_btn_MCMouseClicked
+
+    private void btn_MRMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_MRMouseClicked
+        // TODO add your handling code here:
+        if (jTextField_Valor1.getText() != "") {
+            //CalcCientifica.setOperador("MR");
+            jTextField_Valor1.setText(String.valueOf(CalcCientifica.getMemoria()));
+        }
+    }//GEN-LAST:event_btn_MRMouseClicked
+
+    private void btn_MmaisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_MmaisMouseClicked
+        // TODO add your handling code here:
+        if (jTextField_Valor1.getText() != "") {
+            CalcCientifica.setOperador("M+");
+            CalcCientifica.setValor1(Double.parseDouble(jTextField_Valor1.getText()));
+            CtrlCalcCientifica.RealizarCalculo(CalcCientifica);
+            jTextField_DpMemory.setText(" Memory = " + String.valueOf(CalcCientifica.getMemoria()));
+            jTextField_Valor1.setText("");
+        }
+
+    }//GEN-LAST:event_btn_MmaisMouseClicked
+
+    private void btn_MenosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_MenosMouseClicked
+        // TODO add your handling code here:
+        if (jTextField_Valor1.getText() != "") {
+            CalcCientifica.setOperador("M-");
+            CalcCientifica.setValor1(Double.parseDouble(jTextField_Valor1.getText()));
+            CtrlCalcCientifica.RealizarCalculo(CalcCientifica);
+            jTextField_DpMemory.setText(" Memory = " + String.valueOf(CalcCientifica.getMemoria()));
+            jTextField_Valor1.setText("");
+        }
+    }//GEN-LAST:event_btn_MenosMouseClicked
 
     public static void main(String args[]) {
 
@@ -603,6 +727,10 @@ public class formCalcCientifica extends javax.swing.JFrame {
     private javax.swing.JButton btn_Exp;
     private javax.swing.JButton btn_Limpa;
     private javax.swing.JButton btn_Log;
+    private javax.swing.JButton btn_MC;
+    private javax.swing.JButton btn_MR;
+    private javax.swing.JButton btn_Menos;
+    private javax.swing.JButton btn_Mmais;
     private javax.swing.JButton btn_Mult;
     private javax.swing.JButton btn_Num0;
     private javax.swing.JButton btn_Num1;
@@ -622,6 +750,7 @@ public class formCalcCientifica extends javax.swing.JFrame {
     private javax.swing.JButton btn_Sum;
     private javax.swing.JButton btn_Tangente;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JTextField jTextField_DpMemory;
     private javax.swing.JTextField jTextField_Valor1;
     private javax.swing.JLabel lbl_Op;
     // End of variables declaration//GEN-END:variables
