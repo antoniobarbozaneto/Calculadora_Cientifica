@@ -12,10 +12,10 @@ import Model.CalcCientifica;
  * @author Neto Barboza
  */
 public class CtrlCalcCientifica {
-    
-    public String RealizarCalculo(CalcCientifica CalcCientifica){
-        
-        switch (CalcCientifica.getOperador()){
+
+    public String RealizarCalculo(CalcCientifica CalcCientifica) {
+
+        switch (CalcCientifica.getOperador()) {
             case ("+"):
                 CalcCientifica.setRes(String.valueOf(CalcCientifica.getValor1() + CalcCientifica.getValor2()));
                 break;
@@ -28,19 +28,26 @@ public class CtrlCalcCientifica {
             case ("/"):
                 CalcCientifica.setRes(String.valueOf(CalcCientifica.getValor1() / CalcCientifica.getValor2()));
                 break;
-            case ("cos"):
+            case ("cosseno"):
                 CalcCientifica.setRes("O ângulo de " + CalcCientifica.getValor1() + " tem o Cosseno de " + (Math.cos(Math.toRadians(CalcCientifica.getValor1()))));
                 break;
             case ("seno"):
                 CalcCientifica.setRes("O ângulo de " + CalcCientifica.getValor1() + " tem o Seno de " + (Math.sin(Math.toRadians(CalcCientifica.getValor1()))));
                 break;
-            case ("tang"):
+            case ("tangente"):
                 CalcCientifica.setRes("O ângulo de " + CalcCientifica.getValor1() + " tem a Tangente de " + (Math.tan(Math.toRadians(CalcCientifica.getValor1()))));
                 break;
-                
-            default: CalcCientifica.setRes("");
+            case ("logaritmo"):
+                CalcCientifica.setRes("Logaritmo de " + CalcCientifica.getValor1() + " é: " + String.valueOf(Math.log(CalcCientifica.getValor1())));
+                break;
+            case ("exponencial"):
+                CalcCientifica.setRes("Ëxponencial de " + CalcCientifica.getValor1() + " é: " + String.valueOf(Math.exp(CalcCientifica.getValor1())));
+                break;
+
+            default:
+                CalcCientifica.setRes("");
         }
         return CalcCientifica.getRes();
     }
-    
+
 }

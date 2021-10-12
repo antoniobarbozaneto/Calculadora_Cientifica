@@ -22,7 +22,6 @@ public class formCalcCientifica extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jTextField_Valor1 = new javax.swing.JTextField();
         btn_Limpa = new javax.swing.JButton();
         btn_Res = new javax.swing.JButton();
         btn_Sum = new javax.swing.JButton();
@@ -47,17 +46,13 @@ public class formCalcCientifica extends javax.swing.JFrame {
         btn_Euler = new javax.swing.JButton();
         btn_Log = new javax.swing.JButton();
         btn_Exp = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jTextField_Valor1 = new javax.swing.JTextField();
+        lbl_Op = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 0, 51));
         setResizable(false);
-
-        jTextField_Valor1.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField_Valor1.setCaretColor(new java.awt.Color(0, 0, 0));
-        jTextField_Valor1.setEnabled(false);
-        jTextField_Valor1.setName("txt_valor"); // NOI18N
-        jTextField_Valor1.setOpaque(true);
-        jTextField_Valor1.setSelectedTextColor(new java.awt.Color(0, 0, 0));
-        jTextField_Valor1.setSelectionColor(new java.awt.Color(0, 0, 0));
 
         btn_Limpa.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         btn_Limpa.setText("AC");
@@ -232,7 +227,9 @@ public class formCalcCientifica extends javax.swing.JFrame {
             }
         });
 
-        btn_Euler.setText("e");
+        btn_Euler.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        btn_Euler.setText("Euler");
+        btn_Euler.setActionCommand("Eul");
         btn_Euler.setName("btn_mult"); // NOI18N
         btn_Euler.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -256,21 +253,47 @@ public class formCalcCientifica extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel1.setText("Calculadora Cientifica");
+
+        lbl_Op.setText("Operador: ");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(btn_Num7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn_Limpa, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btn_Res, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(btn_Num4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btn_Num1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(btn_Num2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(btn_Num3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(btn_Div, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(btn_Num5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(btn_Num6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(btn_Mult, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(6, 6, 6)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(btn_Euler, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btn_Pi, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(btn_Num7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btn_Limpa, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(btn_Num8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -285,53 +308,45 @@ public class formCalcCientifica extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(btn_Sum, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(btn_Log, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
-                                    .addComponent(btn_Exp, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(btn_Exp, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(btn_Res, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(btn_Log, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(btn_Tangente, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(btn_Seno, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(btn_Cos, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jTextField_Valor1, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btn_Tangente, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(lbl_Op))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(btn_Num4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn_Num1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btn_Num2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btn_Num3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btn_Div, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btn_Num5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btn_Num6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btn_Mult, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(btn_Euler, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btn_Pi, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btn_Seno, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn_Cos, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jTextField_Valor1, javax.swing.GroupLayout.PREFERRED_SIZE, 274, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(135, 135, 135)
+                        .addComponent(jLabel1)))
+                .addContainerGap(48, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(39, 39, 39)
-                .addComponent(jTextField_Valor1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(11, 11, 11)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextField_Valor1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbl_Op))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btn_Num2)
                             .addComponent(btn_Num3)
                             .addComponent(btn_Num1)
-                            .addComponent(btn_Div))
+                            .addComponent(btn_Div)
+                            .addComponent(btn_Pi))
                         .addGap(4, 4, 4)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -355,9 +370,7 @@ public class formCalcCientifica extends javax.swing.JFrame {
                                 .addComponent(btn_Mult)
                                 .addGap(0, 0, Short.MAX_VALUE))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btn_Pi)
-                            .addComponent(btn_Seno))
+                        .addComponent(btn_Seno)
                         .addGap(4, 4, 4)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btn_Euler, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -367,11 +380,13 @@ public class formCalcCientifica extends javax.swing.JFrame {
                             .addComponent(btn_Log, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btn_Tangente))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btn_Exp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btn_Res, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btn_Exp, javax.swing.GroupLayout.DEFAULT_SIZE, 23, Short.MAX_VALUE)
+                            .addComponent(btn_Res, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(39, 39, 39))
         );
+
+        jLabel1.getAccessibleContext().setAccessibleName("Calculadora Científica");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -382,6 +397,7 @@ public class formCalcCientifica extends javax.swing.JFrame {
         CalcCientifica.setOperador("+");
         CalcCientifica.setValor1(Double.parseDouble(jTextField_Valor1.getText())); //Seta o valor_1
         jTextField_Valor1.setText("");
+        lbl_Op.setText("Operador: " + CalcCientifica.getOperador());
 
     }//GEN-LAST:event_btn_SumMouseClicked
 
@@ -390,6 +406,7 @@ public class formCalcCientifica extends javax.swing.JFrame {
         CalcCientifica.setOperador("-");
         CalcCientifica.setValor1(Double.parseDouble(jTextField_Valor1.getText()));
         jTextField_Valor1.setText("");
+        lbl_Op.setText("Operador: " + CalcCientifica.getOperador());
     }//GEN-LAST:event_btn_SubMouseClicked
 
     private void btn_MultMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_MultMouseClicked
@@ -397,6 +414,7 @@ public class formCalcCientifica extends javax.swing.JFrame {
         CalcCientifica.setOperador("*");
         CalcCientifica.setValor1(Double.parseDouble(jTextField_Valor1.getText()));
         jTextField_Valor1.setText("");
+        lbl_Op.setText("Operador: " + CalcCientifica.getOperador());
     }//GEN-LAST:event_btn_MultMouseClicked
 
     private void btn_DivMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_DivMouseClicked
@@ -404,6 +422,7 @@ public class formCalcCientifica extends javax.swing.JFrame {
         CalcCientifica.setOperador("/");
         CalcCientifica.setValor1(Double.parseDouble(jTextField_Valor1.getText()));
         jTextField_Valor1.setText("");
+        lbl_Op.setText("Operador: " + CalcCientifica.getOperador());
     }//GEN-LAST:event_btn_DivMouseClicked
 
     private void btn_ResMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_ResMouseClicked
@@ -414,10 +433,17 @@ public class formCalcCientifica extends javax.swing.JFrame {
             CalcCientifica.setValor2(Double.parseDouble(jTextField_Valor1.getText())); //Seta o valor_1
             if (CalcCientifica.getOperador() == "+" || CalcCientifica.getOperador() == "-" || CalcCientifica.getOperador() == "*" || CalcCientifica.getOperador() == "/") {
                 //CalcCientifica.setValor2(Double.parseDouble(jTextField_Valor2.getText())); //Seta o valor_1
+                lbl_Op.setText("Operador: " + CalcCientifica.getOperador());
                 JOptionPane.showMessageDialog(null, "Resultado: " + CalcCientifica.getValor1() + " " + CalcCientifica.getOperador() + " " + CalcCientifica.getValor2() + " = " + CtrlCalcCientifica.RealizarCalculo(CalcCientifica)); //Passa para o controle o objeto CalcCientifica.);
             } else {
                 if (CalcCientifica.getOperador() == "seno" || CalcCientifica.getOperador() == "cos" || CalcCientifica.getOperador() == "tang") { //operadores trigonométricos
+                    lbl_Op.setText("Operador: " + CalcCientifica.getOperador());
                     JOptionPane.showMessageDialog(null, CtrlCalcCientifica.RealizarCalculo(CalcCientifica));
+                } else {
+                    if (CalcCientifica.getOperador() == "log" || CalcCientifica.getOperador() == "exp") {
+                        lbl_Op.setText("Operador: " + CalcCientifica.getOperador());
+                        JOptionPane.showMessageDialog(null, CtrlCalcCientifica.RealizarCalculo(CalcCientifica));
+                    }
                 }
             }
         } else {
@@ -431,25 +457,29 @@ public class formCalcCientifica extends javax.swing.JFrame {
         jTextField_Valor1.setText("");
         //jTextField_Valor2.setText("");
         CalcCientifica.setOperador("");
+        lbl_Op.setText("Operador:");
     }//GEN-LAST:event_btn_LimpaMouseClicked
 
     private void btn_SenoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_SenoMouseClicked
         // TODO add your handling code here:
         CalcCientifica.setOperador("seno");
         CalcCientifica.setValor1(Double.parseDouble(jTextField_Valor1.getText())); //Seta o valor_1
+        lbl_Op.setText("Operador: " + CalcCientifica.getOperador());
     }//GEN-LAST:event_btn_SenoMouseClicked
 
     private void btn_CosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_CosMouseClicked
         // TODO add your handling code here:
-        CalcCientifica.setOperador("cos");
+        CalcCientifica.setOperador("cosseno");
         CalcCientifica.setValor1(Double.parseDouble(jTextField_Valor1.getText()));
+        lbl_Op.setText("Operador: " + CalcCientifica.getOperador());
 
     }//GEN-LAST:event_btn_CosMouseClicked
 
     private void btn_TangenteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_TangenteMouseClicked
         // TODO add your handling code here:
-        CalcCientifica.setOperador("tang");
+        CalcCientifica.setOperador("tangente");
         CalcCientifica.setValor1(Double.parseDouble(jTextField_Valor1.getText()));
+        lbl_Op.setText("Operador: " + CalcCientifica.getOperador());
     }//GEN-LAST:event_btn_TangenteMouseClicked
 
     private void btn_Num2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_Num2MouseClicked
@@ -544,10 +574,16 @@ public class formCalcCientifica extends javax.swing.JFrame {
 
     private void btn_LogMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_LogMouseClicked
         // TODO add your handling code here:
+        CalcCientifica.setOperador("log");
+        CalcCientifica.setValor1(Double.parseDouble(jTextField_Valor1.getText()));
+        //jTextField_Valor1.setText("");
     }//GEN-LAST:event_btn_LogMouseClicked
 
     private void btn_ExpMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_ExpMouseClicked
         // TODO add your handling code here:
+        CalcCientifica.setOperador("exp");
+        CalcCientifica.setValor1(Double.parseDouble(jTextField_Valor1.getText()));
+        //jTextField_Valor1.setText("");
     }//GEN-LAST:event_btn_ExpMouseClicked
 
     public static void main(String args[]) {
@@ -585,6 +621,8 @@ public class formCalcCientifica extends javax.swing.JFrame {
     private javax.swing.JButton btn_Sub;
     private javax.swing.JButton btn_Sum;
     private javax.swing.JButton btn_Tangente;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JTextField jTextField_Valor1;
+    private javax.swing.JLabel lbl_Op;
     // End of variables declaration//GEN-END:variables
 }
