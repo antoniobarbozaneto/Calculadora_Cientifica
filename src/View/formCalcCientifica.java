@@ -6,6 +6,12 @@ import javax.swing.JOptionPane;
 
 /*
  * @author Neto Barboza
+ *Grupo do PIM
+ *Antonio Barboza Neto - (Responsavel pelo desenvolvimento dessa calculadora)
+ *Clayton Lima Barbosa
+ *Leonardo C. Dias Turolla
+ *Lucas Correa Nascimento
+ *Ramon Castelli
  */
 public class formCalcCientifica extends javax.swing.JFrame {
 
